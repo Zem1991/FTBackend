@@ -16,7 +16,7 @@ services:
       context: .
       dockerfile: Dockerfile
     environment:
-      - ConnectionStrings__DefaultConnection=User ID=postgres;Password=postgres;Host=localhost;Port=5432;Server=app_db;Database=SampleDbDriver;IntegratedSecurity=true;
+      - ConnectionStrings__DefaultConnection=User ID=postgres;Password=postgres;Port=5432;Server=app_db;Database=SampleDbDriver;IntegratedSecurity=true;
       - ASPNETCORE_URLS=http://+:80
     networks:
       - dev
